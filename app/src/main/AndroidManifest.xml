@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="dhargett.uab.cs.edu.mycollection">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_mycollection"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".MainActivity"
+            android:configChanges="keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AddCollection"
+            android:configChanges="keyboardHidden" />
+        <activity
+            android:name=".CollectionItems"
+            android:configChanges="keyboardHidden|orientation" />
+        <activity
+            android:name=".AddCollectionItem"
+            android:configChanges="keyboardHidden" />
+        <activity
+            android:name=".ItemDetails"
+             />
+        <activity
+            android:name=".MyCollectionSplashScreen"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".imageDetails"></activity>
+    </application>
+
+</manifest>
